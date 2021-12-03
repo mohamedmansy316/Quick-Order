@@ -1,0 +1,290 @@
+//remove all margins and paddings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(100, 98, 98, 0.493);
+}
+
+::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #fdca1293;
+    border-radius: 100px;
+}
+
+body {
+    direction: ltr;
+    text-align: left;
+    font-family: "Geomanist";
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.forpage {
+    display: flex;
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: #eaeaf4;
+    transition: all 0.3s ease-out;
+    overflow-x: hidden;
+    font-family: "Geomanist", sans-serif !important;
+    &.navopen {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.conatiner-inputfilepic {
+    bottom: -11px;
+    right: -5px;
+    position: absolute;
+    opacity: 0;
+    input {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        display: block;
+    }
+}
+
+.conatiner-inputfilecover {
+    position: absolute;
+    bottom: 6%;
+    right: 1%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.content_wrapper {
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    max-width: 100% !important;
+    box-shadow: 5px 0px 20px rgba(#d3d8df, 0.5);
+    border-radius: 30px;
+    background-color: #f3f3fb;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    @media (max-width: $landscape) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.main_heading {
+    font-weight: bold;
+    font-size: 24px;
+    color: #31445e;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+.forlogout {
+}
+
+.navbar .nav_warpper > div {
+    @media (max-width: $phone) {
+        margin-left: 20px;
+    }
+}
+
+.settings {
+    @media (max-width: $phone) {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+.dropdown-menu {
+    @media (max-width: $phone) {
+        left: -1rem;
+    }
+}
+
+.fa-eye {
+    position: relative;
+    right: 29px;
+    top: 8px;
+    color: #888;
+}
+
+.forseay {
+    right: 0;
+    top: 32px !important;
+}
+
+.rounded {
+    border-radius: 20px !important;
+}
+
+.classsub {
+    display: block;
+    color: #111;
+    background-color: #ffc600;
+    width: 100px;
+    padding: 5px 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+    float: right;
+}
+
+.yellow {
+    color: #ffc600;
+}
+.darkColor {
+    color: #31445e !important;
+}
+.lightColor {
+    color: #999 !important;
+    font-size: 14px;
+}
+
+.buttonboxShadow {
+    box-shadow: 0 0 26px #ccc;
+}
+
+.doneecolor,
+.red,
+.blue {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.blue {
+    color: rgb(94, 114, 231);
+}
+
+.red {
+    color: rgb(255, 149, 149);
+}
+.doneecolor {
+    color: #2ee37c;
+}
+
+.dot {
+    position: relative;
+}
+.dot::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    color: #2ee37c;
+    background-color: #2ee37c;
+    left: -20px;
+}
+
+.tetx-l {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+// SliderQouts
+
+.startqoutsdi {
+    color: green;
+}
+
+#carouselExampleSlidesOnly {
+    .carousel-inner {
+        .carousel-item {
+            .container {
+                padding-left: 0;
+                padding-right: 20px;
+                .qoutsslider {
+                    height: 300px;
+                    @media (max-width: $tablets) {
+                        height: auto;
+                        display: block !important;
+                    }
+
+                    img {
+                        width: 300px;
+                        margin: 0px 10px;
+                        @media (max-width: $tablets) {
+                            margin: 0px -30px;
+                        }
+                    }
+
+                    .textsaied {
+                        @media (max-width: $tablets) {
+                            margin-left: 30px;
+                        }
+                        h6 {
+                            font-size: 16px;
+                            line-height: 38px;
+                            font-weight: bolder !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.thelo {
+    @media (max-width: $tablets) {
+        justify-content: center !important;
+    }
+}
+
+.maincolor {
+    color: #ffc600 !important;
+}
+
+.gray {
+    color: #7085a4 !important;
+}
+
+.pagecontent {
+    overflow: hidden !important;
+}
+
+.forform {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.btn-light {
+    background-color: #fff !important;
+}
+
+label {
+    text-align: start;
+    display: block;
+}
+
+@media (max-width: $landscape) {
+    .Quots.text-right {
+        text-align: center !important;
+    }
+}

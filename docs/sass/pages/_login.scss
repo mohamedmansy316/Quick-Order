@@ -1,0 +1,121 @@
+.container-box {
+    height: 100vh;
+    
+}
+.logincontainer {
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        width: 200px;
+        height: 100px;
+    }
+}
+.inputtt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    input,
+    select {
+        width: 90%;
+        outline: none;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 3px 10px;
+        font-size: 0.9rem;
+        color: #222;
+    }
+    ::-webkit-input-placeholder {
+        color: #ddd;
+    }
+    .label {
+    }
+    .label-text {
+        margin-left: 0.5em;
+    }
+    //The good stuff
+    .tooltip-toggle {
+        cursor: pointer;
+        position: relative;
+        svg {
+            height: 15px;
+            width: 15px;
+        }
+        //Tooltip text container
+        &::before {
+            position: absolute;
+            top: -19px;
+            left: -18px;
+            background-color: #2b222a;
+            border-radius: 5px;
+            color: #fff;
+            content: attr(aria-label);
+            /* padding: 1rem; */
+            text-transform: none;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            width: 53px;
+            font-size: 0.8rem !important;
+        }
+        //Tooltip arrow
+        &::after {
+            position: absolute;
+            top: -1px;
+            left: 9px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #2b222a;
+            content: " ";
+            font-size: 0;
+            line-height: 0;
+            margin-left: -5px;
+            width: 0;
+        }
+        //Setting up the transition
+        &::before,
+        &::after {
+            color: #efefef;
+            font-family: monospace;
+            font-size: 16px;
+            opacity: 0;
+            pointer-events: none;
+            text-align: center;
+        }
+        //Triggering the transition
+        &:focus::before,
+        &:focus::after,
+        &:hover::before,
+        &:hover::after {
+            opacity: 1;
+            transition: all 0.75s ease;
+        }
+    }
+}
+.buttoncontainerlogin {
+    width: 92%;
+    .loginbtn {
+        width: 100%;
+        background-color: #fdcb12;
+        display: block;
+        border: 0;
+        outline: none;
+        padding: 1px;
+        font-weight: bold;
+    }
+    .links {
+        margin-top: 10px;
+        a {
+            font-size: 0.8rem;
+            color: #222;
+            font-weight: bold;
+        }
+        .e1 {
+            float: left;
+        }
+        .e2 {
+            float: right;
+        }
+    }
+}
