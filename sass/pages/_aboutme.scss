@@ -1,0 +1,86 @@
+.aboutme-page {
+    background-color: transparent;
+    #intro {
+        height: auto !important;
+        min-height: 100px;
+        .cover-profpic {
+            position: relative;
+            .soiallinks {
+                position: absolute;
+                bottom: 6rem;
+                right: 0;
+                @media (max-width: $phone) {
+                    position: static;
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+                span {
+                    font-weight: bolder;
+                    font-size: 0.8rem;
+                    @media (max-width: $phone) {
+                        display: none;
+                    }
+                }
+                img {
+                    height: 0.8rem;
+                    margin: 0px 8px;
+                }
+            }
+        }
+    }
+    .picinfo {
+        @media (min-width: $landscape) {
+            margin-top: -50px  ;
+        }
+        h3 {
+            font-size: 1.3rem;
+            letter-spacing: -0.2px;
+            font-weight: bolder;
+        }
+        p {
+            font-size: 0.8rem;
+            color: rgb(209, 200, 200);
+            margin-top: -5px;
+        }
+    }
+    .EditProfile {
+        text-align: right;
+    }
+    .lightcontainerform {
+        margin: 0;
+        padding: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        button {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            &.active {
+                border-bottom: 3px solid #f4c208;
+            }
+        }
+    }
+    .lightcontainerdata {
+        padding: 0;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 0;
+        overflow: hidden;
+        max-width: 100%;
+        .aboutab {
+            padding: 20px 7rem;
+            border: 1px solid #eee;
+            @media (max-width: $tablets) {
+                padding: 20px 2rem;
+            }
+            h5 {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

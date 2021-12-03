@@ -1,0 +1,97 @@
+// X-Small devices (portrait phones, less than 576px)
+//@media (max-width:$phone ) { ... }
+// Small devices (landscape phones, less than 768px)
+@media (max-width: $landscape) {
+    #intro {
+        padding: 20px;
+        min-height: 250px;
+        display: block;
+        text-align: center;
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        .illustration {
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .table_container {
+        overflow-x: scroll;
+    }
+    .forlogout {
+        display: none;
+    }
+    .navbar .nav_warpper > div {
+        margin-left: 6px;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: $tablets) {
+    .navbar {
+        #humbergur {
+        }
+        .nav_icon {
+            img {
+                width: 20px;
+            }
+            .notif {
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+                font-size: 12px;
+            }
+        }
+    }
+    .content_wrapper {
+        // padding: 15px;
+    }
+    #graph {
+        .date_container {
+            display: block;
+            text-align: center;
+            .time_select {
+                margin-top: 20px;
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .new_targets_box {
+        text-align: center;
+    }
+    #services {
+        .img_serv {
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+//@media (max-width: $desktops) {}
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1000000000000000000px) {
+    .navbar {
+        #humbergur {
+            cursor: pointer;
+            font-size: 28px;
+            color: #31445e;
+        }
+    }
+}
+
+
+
+.home-section .text {
+    margin: 18px 0 !important;
+}
+
+.productContainer .theContent {
+    padding: 12px;
+}
